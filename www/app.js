@@ -23,7 +23,7 @@ const API_publicKey = "FLWPUBK-40917bf3fe95e999bd8e1e906c7cea25-X";
 
 function payWithRave() {
     if (user == 0) {
-        alert('please add atleast one item to cart');
+        alert('please add at least one item to cart');
     } else {
         let cost = 5000 * user;
         let email = prompt('email');
