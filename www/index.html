@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><get-de-art></get-de-art></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">get-de-art</div>
+        <div class="cart"></div>
+    </header>
+
+    <div class="container">
+        <div class="art-work">
+            <div>
+                <div>
+                    <img src="assets/art.jpg" alt="Art Image" />
+                    <div class="art-work--hover">
+                        <img src="assets/eye.svg" onclick="view('show')" alt="view">
+                        <img src="assets/md-cart.svg" onclick="add_to_cart()" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Expression of love
+                    <span class="price">5,000</span>
+                </p>
+            </div>
+        </div>
+        <div class="art-work">
+            <div>
+                <div>
+                    <img src="assets/art.jpg" alt="Art Image" />
+                    <div class="art-work--hover">
+                        <img src="assets/eye.svg" onclick="view('show')" alt="view">
+                        <img src="assets/md-cart.svg" onclick="add_to_cart()" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Expression of love
+                    <span class="price">5,000</span>
+                </p>
+            </div>
+        </div>
+        <div class="art-work">
+            <div>
+                <div>
+                    <img src="assets/art.jpg" alt="Art Image" />
+                    <div class="art-work--hover">
+                        <img src="assets/eye.svg" onclick="view('show')" alt="view">
+                        <img src="assets/md-cart.svg" onclick="add_to_cart()" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Expression of love
+                    <span class="price">5,000</span>
+                </p>
+            </div>
+        </div>
+        <div class="art-work">
+            <div>
+                <div>
+                    <img src="assets/art.jpg" alt="Art Image" />
+                    <div class="art-work--hover">
+                        <img src="assets/eye.svg" onclick="view('show')" alt="view">
+                        <img src="assets/md-cart.svg" onclick="add_to_cart()" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Expression of love
+                    <span class="price">5,000</span>
+                </p>
+            </div>
+        </div>
+        <div class="art-work">
+            <div>
+                <div>
+                    <img src="assets/art.jpg" alt="Art Image" />
+                    <div class="art-work--hover">
+                        <img src="assets/eye.svg" onclick="view('show')" alt="view">
+                        <img src="assets/md-cart.svg" onclick="add_to_cart()" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Expression of love
+                    <span class="price">5,000</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="view hide">
+        <div id="close" class="close-view">
+            <img src="assets/md-close.svg" alt="close icon">
+        </div>
+        <div class="image">
+            <img src="assets/art.jpg" alt="Art Image" />
+        </div>
+    </div>
+
+    <!-- <div class="view">
+        <div id="close" class="close-view">
+            <img src="assets/md-close.svg" alt="close icon">
+        </div>
+        <div class="form">
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+        </div>
+    </div> -->
+
+    <div class="cart-icon" onclick="payWithRave()">
+        <img src="assets/md-cart.svg" alt="cart">
+        <div id="cart_number">0</div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+<script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+</html>

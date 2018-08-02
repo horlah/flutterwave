@@ -1,0 +1,185 @@
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 50px 0 30px;
+    font-size: 2rem;
+}
+
+header div:first-child {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+header div:last-child {
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.art-work {
+    margin: 0 30px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.art-work>div:first-child {
+    /* border: 1px solid #eee; */
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.art-work>div:last-child {
+    border-top: 1px solid #eee;
+}
+
+.art-work div:first-child img {
+    width: 100%;
+}
+
+.art-work div:first-child div {
+    position: relative;
+}
+
+.art-work div:first-child .art-work--hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    color: white;
+    transition: all .5s;
+    opacity: 0;
+    /* background: rgba(0, 0, 0, .5); */
+}
+
+.art-work div:first-child .art-work--hover img {
+    width: 15%;
+}
+
+.art-work div:first-child .art-work--hover img:first-child {
+    border-right: 1px solid white;
+    padding-right: 20px;
+}
+
+.art-work div:first-child .art-work--hover img:last-child {
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+
+.art-work div:first-child:hover .art-work--hover {
+    opacity: 1;
+}
+
+.art-work .price {
+    position: absolute;
+    right: 10px;
+}
+
+.view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+.view.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.view.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.view .image {
+    width: 100%;
+}
+
+.view .image img {
+    width: 100%;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: white;
+    font-size: 2.5rem;
+    width: 15%;
+    text-align: center;
+}
+
+#close img {
+    width: 80%;
+}
+
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-icon div {
+    background: red;
+    position: absolute;
+    top: -3px;
+    left: 5px;
+    width: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.cart-icon img {
+    width: 80%;
+}
+
+.view .form {
+    background: #fff;
+    width: 50%;
+    padding: 60px 80px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .art-work {
+        margin: 0 30px 20px;
+        position: relative;
+        width: 30%;
+    }
+
+    .view div {
+        width: 60%;
+    }
+}
