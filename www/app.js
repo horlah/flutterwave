@@ -30,7 +30,7 @@ function payWithRave() {
         let mobile = prompt('mobile number');
         console.log(email);
         var x = getpaidSetup({
-            PBFPubKey: 'FLWPUBK-40917bf3fe95e999bd8e1e906c7cea25-X',
+            PBFPubKey: API_publicKey,
             customer_email: email,
             amount: cost,
             customer_phone: mobile,
